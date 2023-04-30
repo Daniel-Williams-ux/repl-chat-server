@@ -17,3 +17,8 @@ io.on("connection", function (connection) {
     io.emit("broadcast", data);
   });
 });
+
+//Start up and test the server
+server.listen(3000, function () {
+  console.log("listening on port 3000");
+});
